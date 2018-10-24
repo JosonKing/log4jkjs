@@ -4,9 +4,6 @@ const fsJet = require('fs-jetpack');
 fsJet.copy('./lib', './publish/log4jkjs/lib', {
   overwrite: true
 });
-fsJet.copy('./index.js', './publish/log4jkjs/index.js', {
-  overwrite: true
-});
 fsJet.copy('./LICENSE', './publish/log4jkjs/LICENSE', {
   overwrite: true
 });

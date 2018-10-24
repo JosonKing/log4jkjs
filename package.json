@@ -1,11 +1,11 @@
 {
   "name": "log4jkjs",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "log for javascript",
   "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./test.js",
+    "start": "node ./test/index.js",
     "esw": "esw ./src/* -w",
     "babel": "babel src --out-dir lib",
     "copy": "node ./scripts/copyPublish.js"
@@ -37,5 +37,7 @@
     "fs-jetpack": "^2.2.0",
     "ncp": "^2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
+  }
 }
