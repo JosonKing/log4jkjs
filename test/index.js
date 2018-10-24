@@ -1,4 +1,4 @@
-var logger = require('../src/index');
+var logger = require('../lib/index');
 
 // logger.config();
 logger.config('log', 'red', 'console');
