@@ -1,4 +1,5 @@
-import 'babel-polyfill';
+// import 'babel-polyfill';
+require('babel-polyfill');
 // var FileSaver = require('file-saver');
 var utils = require('./lib/utils');
 var logger = module.exports;
