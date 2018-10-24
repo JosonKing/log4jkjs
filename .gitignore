@@ -5,6 +5,7 @@
 
 # production
 /lib
+/publish
 
 # misc
 .DS_Store

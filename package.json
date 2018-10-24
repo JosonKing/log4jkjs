@@ -1,6 +1,6 @@
 {
   "name": "log4jkjs",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "log for javascript",
   "main": "./index.js",
   "scripts": {
@@ -8,11 +8,11 @@
     "start": "node ./test.js",
     "esw": "esw ./src/* -w",
     "babel": "babel src --out-dir lib",
-    "copyPbulish": "node ./scripts/copyPublish.js"
+    "copy": "node ./scripts/copyPublish.js"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:JosonKing/log4jjs.git"
+    "url": "git@github.com:JosonKing/log4jkjs.git"
   },
   "keywords": [
     "npm",
@@ -34,6 +34,7 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-watch": "^4.0.2",
+    "fs-jetpack": "^2.2.0",
     "ncp": "^2.0.0"
   },
   "dependencies": {}

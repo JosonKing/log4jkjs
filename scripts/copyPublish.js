@@ -1,16 +1,18 @@
-var ncp = require('ncp').ncp;
+'use strict';
 
-ncp.limit = 16;
-
-ncp('./lib/', './publish/log4jkjs/lib/', function (err) {
-  if (err) {
-    return console.error(err);
-  }
-  console.log('done!');
+const fsJet = require('fs-jetpack');
+fsJet.copy('./lib', './publish/log4jkjs/lib', {
+  overwrite: true
 });
-
-// ncp('./lib/', './publish/log4jkjs/lib/');
-// ncp('./index.js', './publish/log4jkjs/index.js');
-// ncp('./LICENSE', './publish/log4jkjs/LICENSE');
-// ncp('./package.json', './publish/log4jkjs/package.json');
-// ncp('./README.md', './publish/log4jkjs/README.md');
+fsJet.copy('./index.js', './publish/log4jkjs/index.js', {
+  overwrite: true
+});
+fsJet.copy('./LICENSE', './publish/log4jkjs/LICENSE', {
+  overwrite: true
+});
+fsJet.copy('./package.json', './publish/log4jkjs/package.json', {
+  overwrite: true
+});
+fsJet.copy('./README.md', './publish/log4jkjs/README.md', {
+  overwrite: true
+});
