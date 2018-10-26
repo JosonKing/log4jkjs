@@ -1,6 +1,8 @@
 # log4jkjs
 Log for javascript.
 
+[![NPM](https://nodei.co/npm/log4jkjs.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/log4jkjs/)
+
 ## installation
 ```bash
 npm install log4jkjs
